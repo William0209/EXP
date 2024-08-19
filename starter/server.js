@@ -12,6 +12,7 @@ const DB = process.env.DATABASE.replace(
 mongoose
   .connect(DB, {
     useNewUrlParser: true,
+    useUnifiedTopology: true, // Add this option
     useCreateIndex: true,
     useFindAndModify: false,
   })
